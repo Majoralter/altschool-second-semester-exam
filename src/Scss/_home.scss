@@ -57,6 +57,21 @@
   }
 }
 
+.error--page{
+    @include flex(column, center, center, 1rem);
+
+    h1{
+        color: $white;
+        font-size: var(--font-size-fluid-3);
+    }
+
+    .back-home--link{
+        color: $white;
+        padding: 12px 24px;
+        background-color: #222;
+    }
+}
+
 @media (max-width: 967px){
     .index--section{
         .wrapper{

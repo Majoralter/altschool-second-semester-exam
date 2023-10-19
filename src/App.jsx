@@ -4,6 +4,8 @@ import Test from "./routes/Test"
 import Layout from "./layout/Layout"
 import Repos from "./routes/Repos"
 import Repo from "./routes/Repo"
+import PageNotFound from "./routes/PageNotFound"
+
 import './Scss/main.scss'
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
       <Route path="test" element={<Test />} />
       <Route path="public_repos" element={<Repos />} />
       <Route path="public_repos/:id" element={<Repo />} />
+      <Route path="*" element={<PageNotFound />} />
     </Route>
   </Routes>
  )
