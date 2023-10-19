@@ -1,0 +1,36 @@
+.content--layout {
+  min-height: 100dvh;
+  @include flex(column, center, space-between, 0);
+  padding-block-end: var(--size-fluid-1);
+
+  nav {
+    width: 100dvw;
+    padding-block: var(--size-7);
+
+    ul {
+      @include flex(row, center, space-between, 0);
+      width: 80%;
+      margin-inline: auto;
+
+      li {
+        color: $white;
+        font-size: var(--font-size-fluid-0);
+
+        .nav--link {
+          color: $white;
+        }
+
+        .cta {
+          padding: 12px 24px;
+          background-color: $off-black;
+          border-radius: var(--radius-2);
+        }
+      }
+    }
+  }
+
+  footer{
+    color: #aaa;
+    margin-top: 1rem;
+  }
+}
