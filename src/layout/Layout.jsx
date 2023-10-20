@@ -19,7 +19,7 @@ const Layout = () =>{
         </nav>
         <Outlet />
 
-        <footer><small>&copy; 2023 Altschool second semester Examination</small></footer>
+        <footer>&copy; 2023 Altschool second semester Examination</footer>
       </div>
     );
 }

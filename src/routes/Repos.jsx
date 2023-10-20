@@ -15,7 +15,7 @@ const Repos = () => {
       setRepos([...data]);
 
       setIsLoading(false);
-      console.log(data);
+    //   console.log(data);
     } catch (error) {
       if (error.response) {
         console.error(
