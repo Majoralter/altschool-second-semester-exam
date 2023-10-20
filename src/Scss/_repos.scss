@@ -36,7 +36,7 @@
 }
 
 .repo--data {
-  margin-inline: 2vw;  
+  margin-inline: 2vw;
   padding: 1rem;
   background-color: #222;
   @include flex(column, center, center, var(--size-5));
@@ -51,7 +51,7 @@
     font-size: var(--font-size-fluid-0);
   }
 
-  .back--link{
+  .back--link {
     width: 100%;
     padding: 12px;
     background-color: #0e0e0e;
@@ -59,23 +59,22 @@
     color: $white;
   }
 
-  .tabs{
+  .tabs {
     @include flex(row, center, center, 1rem);
     flex-wrap: wrap;
 
-    p{
-        padding: .75rem;
-        background-color: #333;
-        color: $white;
+    p {
+      padding: 0.75rem;
+      background-color: #333;
+      color: $white;
     }
   }
 }
 
-
-@media (max-width: 567px){
-    .repos{
-        .repo{
-            width: 90%;
-        }
+@media (max-width: 567px) {
+  .repos {
+    .repo {
+      width: 90%;
     }
+  }
 }

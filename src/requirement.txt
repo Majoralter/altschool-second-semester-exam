@@ -1,0 +1,3 @@
+Libaries used
+Octokit.js - For Github fetch requests
+Open-props - For CSS pre-styled variables

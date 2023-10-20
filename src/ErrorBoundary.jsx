@@ -14,12 +14,18 @@ class ErrorBoundary extends React.Component {
 
   render() {
     if (this.state.hasError) {
-      // You can render any custom fallback UI
       return (
         <>
           <h1 style={{ color: "white" }}>Oops... Something went wrong</h1>;
           <br />
-          <button style={{color: "gray"}} onClick={() => {window.location.href = "/"}}>Go back</button>
+          <button
+            style={{ color: "gray" }}
+            onClick={() => {
+              window.location.href = "/";
+            }}
+          >
+            Go back
+          </button>
         </>
       );
     }

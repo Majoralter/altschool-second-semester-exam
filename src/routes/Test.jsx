@@ -1,18 +1,13 @@
-import { useLocation } from "react-router-dom"
-import { useEffect } from "react"
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
-const Test = () =>{
-         let  path = useLocation() 
+const Test = () => {
+  let path = useLocation();
 
-    // const [error, setError] = useState(false)
+  useEffect(() => {
+    if (path.pathname === "/test") throw "Testing Error Boundary";
+    return () => {};
+  }, [path]);
+};
 
-    useEffect(() =>{
-
-        if(path.pathname === '/test') throw ("Testing Error Boundary")
-        // console.log(path.pathname)
-
-        return () => {}
-    }, [path])
-}
-
-export default Test
+export default Test;

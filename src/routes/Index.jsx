@@ -3,8 +3,6 @@ import { Octokit } from "octokit";
 import { Link } from "react-router-dom";
 
 const Index = () => {
-  // window.location.reload();
-
   const octokit = new Octokit({});
   const [user, setUser] = useState({});
   const [isLoading, setIsLoading] = useState(false);
@@ -33,8 +31,6 @@ const Index = () => {
 
     return () => {};
   }, []);
-
-  // console.log(user);
 
   return (
     <section className="index--section">

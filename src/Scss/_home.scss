@@ -1,5 +1,5 @@
 .index--section {
-  @include flex(column, center, center, var(--size-7));;
+  @include flex(column, center, center, var(--size-7));
   width: 100%;
 
   h1 {
@@ -7,7 +7,7 @@
     font-size: var(--font-size-fluid-2);
   }
 
-  p{
+  p {
     font-size: var(--font-size-fluid-2);
     font-weight: bold;
     color: #555;
@@ -41,13 +41,13 @@
       h3 {
         width: 100%;
         color: $white;
-        padding: .75rem;
+        padding: 0.75rem;
         background-color: #222;
       }
     }
   }
 
-  .link{
+  .link {
     color: $white;
     width: 30%;
     padding: 12px;
@@ -57,30 +57,30 @@
   }
 }
 
-.error--page{
-    @include flex(column, center, center, 1rem);
+.error--page {
+  @include flex(column, center, center, 1rem);
 
-    h1{
-        color: $white;
-        font-size: var(--font-size-fluid-3);
-    }
+  h1 {
+    color: $white;
+    font-size: var(--font-size-fluid-3);
+  }
 
-    .back-home--link{
-        color: $white;
-        padding: 12px 24px;
-        background-color: #222;
-    }
+  .back-home--link {
+    color: $white;
+    padding: 12px 24px;
+    background-color: #222;
+  }
 }
 
-@media (max-width: 967px){
-    .index--section{
-        .wrapper{
-            @include flex(column, center, center, 1rem);
-            width: 90%;
-        }
-
-        .link{
-            width: 90%;
-        }
+@media (max-width: 967px) {
+  .index--section {
+    .wrapper {
+      @include flex(column, center, center, 1rem);
+      width: 90%;
     }
+
+    .link {
+      width: 90%;
+    }
+  }
 }
